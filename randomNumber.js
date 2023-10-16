@@ -1,3 +1,4 @@
+
 class randomGeuss {
     constructor() {
         this.minValInput = document.querySelector(".minV");
@@ -48,7 +49,7 @@ class randomGeuss {
                 } else {
                     attempts--;
                     if (attempts > 0) {
-                        this.showBar('You have guessed: ' + guess + ' This is not correct. ' + attempts + ' attempt(s) left', 'yellow');
+                        this.showBar('You have guessed: ' + guess + ' This is not correct. ' + attempts + ' attempt(s) left', '#FF6347');
                     } else {
                      
                         this.showBar('You have guessed: ' + guess + '[Out of attempts] GAME OVER', 'red');
