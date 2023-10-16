@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <title>Regular Expression Validation</title>
+    <style>
+        .setValue{
+            background-color: orange;
+            color: white;
+
+        }
+        .setValue:hover{
+            background-color: red;
+        }
+        
+        .guess{
+           background-color: blue;
+           color: yellow;
+        }
+
+        .guess:hover{
+          background-color: green;
+          color: white;
+
+        }
+
+        .guides{
+            background-color: bisque;
+        }
+        .guidesIN{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>WELCOME TO RANDOM GUESSING GAME</h1>
+
+    <div class="container">
+        <div class="showResult">
+        </div>
+        <form id="setValueForm">
+            <label for="input">Select the Range between Minimum And maximum value you want to guess</label>
+            <input type="number" class="minV" placeholder="Minimum Value">
+            <input type="number" class="maxV" placeholder="Maximum Value">
+            <button class="setValue">Set Value</button>
+        </form>
+    </div>
+    <div class="container">
+        <form id="guessForm">
+            <label for="guessing value">Guess the Random Value</label>
+            <input type="text" class="gV"> 
+            <button class="guess">Guess</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="guides">
+            <h4>RULES >>>></h4>
+        <ol class="guidesIN">
+            <li>You Have Only 3 attempts to geuss correct</li>
+            <li>The minimum Value Should lesser then the Maximum Value</li>
+            <li>After Setting the value You can play your Game.But only 3 times You can guess. <b>BEST OF LUCK</b></li>
+            <li>Thanks From <b>Md.Ashraful Islam</b> For play the Game.</li>
+        </ol><br>
+        </div>
+    </div>
+
+    <script src="randomNumber.js"></script>
+</body>
+</html>
