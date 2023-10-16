@@ -48,7 +48,7 @@ class randomGeuss {
                 } else {
                     attempts--;
                     if (attempts > 0) {
-                        this.showBar('You have guessed: ' + guess + ' This is not correct. ' + attempts + ' attempt(s) left', 'black');
+                        this.showBar('You have guessed: ' + guess + ' This is not correct. ' + attempts + ' attempt(s) left', 'yellow');
                     } else {
                      
                         this.showBar('You have guessed: ' + guess + '[Out of attempts] GAME OVER', 'red');
